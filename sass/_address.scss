@@ -1,0 +1,34 @@
+.address-info h4 {
+    font-size: 18px;
+    font-family: 'robotobold';
+    margin-bottom: 5px;
+}
+
+.address-info h5 {
+    margin-bottom: 15px;
+}
+
+#address .social-icons li {
+	margin-top: 5px;
+	width: 100%;
+	h4 {
+		margin: 0;
+	}
+}
+
+.img-rer {
+    height: 20px;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+@include media(max-width $phone) {
+	#address iframe {
+		max-height: 200px;
+		margin-bottom: 30px;
+	}
+}
+
+iframe {
+	width: 100%;
+}
