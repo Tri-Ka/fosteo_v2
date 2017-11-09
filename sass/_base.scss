@@ -3,6 +3,7 @@ body {
 	line-height: 24px;
 	color: $body-color;
 	font-family: 'robotolight';
+	text-align: justify;
 }
 
 a {
@@ -42,11 +43,16 @@ h1, h2, h3, h4, h5 {
 	&.default {
 		background: $accent;
 		color: $white;
+
+		&:hover,
+		&:focus {
+			background: lighten($accent, 5%);
+		}
 	}
 }
 
 .page-section {
-	padding-top: 120px;
+	padding-top: 60px;
 }
 
 .page-heading {
@@ -115,4 +121,56 @@ h1, h2, h3, h4, h5 {
 
 img {
 	max-width: 100%;
+}
+
+.flash {
+	position: fixed;
+    top: 90px;
+    right: 0;
+    padding: 15px;
+    z-index: 10000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+	&__success {
+		background: #4CAF50;
+	}
+
+	&__error {
+		background: #F44336;
+	}
+
+	i {
+		margin-right: 10px;
+	}
+}
+
+.arrow-link {
+	position: absolute;
+    bottom: 0;
+    width: 80px;
+    opacity: 0.1;
+    left: 50%;
+    margin-left: -40px;
+
+    &:hover,
+    &:focus {
+    	opacity: 0.3;
+    }
+}
+
+.marged-top {
+	margin-top: 30px;
+    display: block;
+}
+
+.marged-bottom {
+	margin-bottom: 30px;
+    display: block;
+
+    &--big {
+    	margin-bottom: 60px;
+    	display: block;
+    }
 }

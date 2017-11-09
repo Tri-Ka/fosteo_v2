@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -9,7 +11,7 @@
         <title>Coline FANZUTTI - Ostéopathe</title>
         <meta name="description" content="Coline FANZUTTI, Ostéopathe DO à Evry - 91000, 1 Square Gustave Flourens. Ostéopathie générale, nourrissons et femmes enceintes. Consultations en cabinet ou à domicile">
         <meta name="keywords" content="ostéopathe, ostéopathie, evry, massy, la ville-du-bois, orsay, douleur, dos, cou, lombalgie, cervicalgie, céphalée, nourrisson, bébé, enceinte, grossesse, sport">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta property="og:url"                content="http://www.fanzutti-osteopathe.com"/>
         <meta property="og:title"              content="Coline Fanzutti - Ostéopathe" />
         <meta property="og:description"        content="Bienvenue sur le site de Coline FANZUTTI, Ostéopathe à Evry - 91000, 1 Square Gustave Flourens" />
@@ -26,6 +28,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <?php include 'actions/flash.php'; ?>
+
         <?php include 'templates/slider.html'; ?>
         <?php include 'templates/navigation.html'; ?>
         <?php include 'templates/about.html'; ?>
@@ -34,7 +38,7 @@
         <?php include 'templates/seance.html'; ?>
         <?php include 'templates/address.html'; ?>
         <?php include 'templates/photos.html'; ?>
-        <?php include 'templates/contact.php'; ?>
+        <?php include 'templates/contact.html'; ?>
         <?php include 'templates/footer.html'; ?>
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>

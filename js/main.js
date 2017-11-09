@@ -1,12 +1,23 @@
+$.fn.extend({
+    animateCss: function (animationName, callBack) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+            callBack();
+        });
+        return this;
+    }
+});
+
 (function($) {
 
-	"use strict";	
+	"use strict";
 
 	$('.carousel').carousel({
 		interval: false
 	});
 
-	// jQuery Stick menu		
+	// jQuery Stick menu
 	$(".navbar").sticky({
 		topSpacing: 0,
 	});
@@ -39,8 +50,21 @@
         }
 	});
 
-	$('#logo-container').click(function(){
-		$('#target').click();
+	$('[data-scroll-top]').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+
+		$('html,body').animate({
+			scrollTop: $('.first-section').offset().top-60
+        }, 600);
 	});
+
+	setTimeout(
+		function(){
+			$('[data-flash]').animateCss('fadeOutRight', function(){
+				$('[data-flash]').remove();
+			});
+		},
+	4000);
 
 })(jQuery);

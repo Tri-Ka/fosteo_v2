@@ -53,6 +53,9 @@
 }
 
 .horaires {
-	margin-bottom: 15px;
 	display: block;
+
+	&:last-of-type {
+		margin-bottom: 15px;
+	}
 }

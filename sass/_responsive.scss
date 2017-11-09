@@ -1,0 +1,38 @@
+@include media(max-width $phone) {
+	.page-section {
+		padding-top: 30px;
+
+		.page-heading {
+			margin-bottom: 30px;
+		}
+	}
+
+	.contact-info {
+		margin-bottom: 0;
+	}
+
+	.navbar, .navbar-default, .navbar-static-top {
+		height: auto;
+		margin-bottom: 0;
+	}
+
+	#undefined-sticky-wrapper, .sticky-wrapper {
+		height: auto !important;
+	}
+
+	.is-sticky .navbar.navbar-default.navbar-static-top {
+		height: auto;
+	}
+
+	.gallery-item:last-of-type {
+		margin-bottom: 0;
+	}
+
+	#seance hr {
+		display: none;
+	}
+
+	.seance-state {
+		margin-bottom: 15px;
+	}
+}
