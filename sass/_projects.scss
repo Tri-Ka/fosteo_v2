@@ -1,9 +1,6 @@
 .gallery-holder {
-	display: inline-block;
-}
-
-.gallery-item {
-	margin-bottom: 30px;
+	display: block;
+	overflow: auto;
 }
 
 .gallery-thumb {

@@ -32,7 +32,7 @@
 }
 
 /* line 113, ../sass/_vars.scss */
-.slider-options:after {
+.slider-options:after, .contact-form:after {
   content: "";
   display: table;
   clear: both;
@@ -278,7 +278,7 @@ a:hover {
 
 /* line 54, ../sass/_base.scss */
 .page-section {
-  padding-top: 60px;
+  padding: 60px 0px;
 }
 
 /* line 58, ../sass/_base.scss */
@@ -344,20 +344,19 @@ a:hover {
 /* line 112, ../sass/_base.scss */
 .page-section {
   background: #3c4755;
-  padding-bottom: 30px;
 }
-/* line 116, ../sass/_base.scss */
+/* line 115, ../sass/_base.scss */
 .page-section:nth-child(odd) {
   background: #e9e9e9;
   color: #3c4755;
 }
 
-/* line 122, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 126, ../sass/_base.scss */
+/* line 125, ../sass/_base.scss */
 .flash {
   position: fixed;
   top: 90px;
@@ -368,20 +367,20 @@ img {
   border-bottom-left-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
-/* line 136, ../sass/_base.scss */
+/* line 135, ../sass/_base.scss */
 .flash__success {
   background: #4CAF50;
 }
-/* line 140, ../sass/_base.scss */
+/* line 139, ../sass/_base.scss */
 .flash__error {
   background: #F44336;
 }
-/* line 144, ../sass/_base.scss */
+/* line 143, ../sass/_base.scss */
 .flash i {
   margin-right: 10px;
 }
 
-/* line 149, ../sass/_base.scss */
+/* line 148, ../sass/_base.scss */
 .arrow-link {
   position: absolute;
   bottom: 0;
@@ -390,26 +389,36 @@ img {
   left: 50%;
   margin-left: -40px;
 }
-/* line 157, ../sass/_base.scss */
+/* line 156, ../sass/_base.scss */
 .arrow-link:hover, .arrow-link:focus {
   opacity: 0.3;
 }
 
-/* line 163, ../sass/_base.scss */
+/* line 162, ../sass/_base.scss */
 .marged-top {
   margin-top: 30px;
   display: block;
 }
 
-/* line 168, ../sass/_base.scss */
+/* line 167, ../sass/_base.scss */
 .marged-bottom {
   margin-bottom: 30px;
   display: block;
 }
-/* line 172, ../sass/_base.scss */
+/* line 171, ../sass/_base.scss */
 .marged-bottom--big {
   margin-bottom: 60px;
   display: block;
+}
+
+/* line 177, ../sass/_base.scss */
+.is-sticky {
+  padding-top: 59px;
+}
+
+/* line 181, ../sass/_base.scss */
+.no-marg {
+  margin: 0 !important;
 }
 
 /*---------------------------------------------------------
@@ -749,53 +758,49 @@ html, body {
 
 /*------ about ------ */
 /* line 2, ../sass/_about.scss */
-#about p {
-  font-size: 13px;
-}
-/* line 5, ../sass/_about.scss */
 #about h4 {
   font-size: 18px;
   font-family: 'robotobold';
   margin-bottom: 15px;
 }
 
-/* line 12, ../sass/_about.scss */
+/* line 9, ../sass/_about.scss */
 .profile-image {
   overflow: hidden;
   margin-bottom: 30px;
 }
-/* line 15, ../sass/_about.scss */
+/* line 12, ../sass/_about.scss */
 .profile-image img {
   width: 100%;
   display: block;
 }
 
-/* line 21, ../sass/_about.scss */
+/* line 18, ../sass/_about.scss */
 .profile-content {
   margin-bottom: 40px;
 }
-/* line 23, ../sass/_about.scss */
+/* line 20, ../sass/_about.scss */
 .profile-content span {
   display: block;
   margin-bottom: 15px;
   color: #a1adbc;
 }
 
-/* line 30, ../sass/_about.scss */
+/* line 27, ../sass/_about.scss */
 .my-skills {
   margin-bottom: 120px;
 }
 
-/* line 34, ../sass/_about.scss */
+/* line 31, ../sass/_about.scss */
 .progess-bars {
   margin-top: 30px;
 }
-/* line 36, ../sass/_about.scss */
+/* line 33, ../sass/_about.scss */
 .progess-bars span {
   font-size: 12px;
 }
 
-/* line 41, ../sass/_about.scss */
+/* line 38, ../sass/_about.scss */
 .progress {
   box-shadow: none;
   height: 14px;
@@ -805,17 +810,17 @@ html, body {
   margin-bottom: 10px;
 }
 
-/* line 50, ../sass/_about.scss */
+/* line 47, ../sass/_about.scss */
 .progress-bar {
   box-shadow: none;
   background: #e46948;
 }
 
-/* line 55, ../sass/_about.scss */
+/* line 52, ../sass/_about.scss */
 .horaires {
   display: block;
 }
-/* line 58, ../sass/_about.scss */
+/* line 55, ../sass/_about.scss */
 .horaires:last-of-type {
   margin-bottom: 15px;
 }
@@ -823,25 +828,21 @@ html, body {
 /*------ projects ------ */
 /* line 1, ../sass/_projects.scss */
 .gallery-holder {
-  display: inline-block;
+  display: block;
+  overflow: auto;
 }
 
-/* line 5, ../sass/_projects.scss */
-.gallery-item {
-  margin-bottom: 30px;
-}
-
-/* line 9, ../sass/_projects.scss */
+/* line 6, ../sass/_projects.scss */
 .gallery-thumb {
   overflow: hidden;
   position: relative;
 }
-/* line 12, ../sass/_projects.scss */
+/* line 9, ../sass/_projects.scss */
 .gallery-thumb img {
   width: 100%;
   display: block;
 }
-/* line 16, ../sass/_projects.scss */
+/* line 13, ../sass/_projects.scss */
 .gallery-thumb .hover {
   position: absolute;
   width: 100%;
@@ -857,7 +858,7 @@ html, body {
   -o-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-/* line 27, ../sass/_projects.scss */
+/* line 24, ../sass/_projects.scss */
 .gallery-thumb a {
   position: absolute;
   top: 50%;
@@ -871,34 +872,34 @@ html, body {
   margin-left: -75px;
   margin-top: -20px;
 }
-/* line 41, ../sass/_projects.scss */
+/* line 38, ../sass/_projects.scss */
 .gallery-thumb:hover .hover {
   top: 0;
   opacity: 1;
   visibility: visible;
 }
 
-/* line 53, ../sass/_projects.scss */
+/* line 50, ../sass/_projects.scss */
 .modal-content {
   border-radius: 0px;
 }
-/* line 55, ../sass/_projects.scss */
+/* line 52, ../sass/_projects.scss */
 .modal-content img {
   width: 100%;
 }
-/* line 58, ../sass/_projects.scss */
+/* line 55, ../sass/_projects.scss */
 .modal-content .modal-header {
   background: #3c4755;
   color: #fff;
 }
 
-/* line 64, ../sass/_projects.scss */
+/* line 61, ../sass/_projects.scss */
 .modal-content-list {
   margin-left: -30px;
   margin-top: 30px;
 }
 
-/* line 69, ../sass/_projects.scss */
+/* line 66, ../sass/_projects.scss */
 .modal-content-list ul li {
   padding-left: 30px;
   margin-bottom: 15px;
@@ -970,10 +971,6 @@ iframe {
 }
 
 /*------ contact ------ */
-/* line 1, ../sass/_contact.scss */
-.contact-form {
-  margin-bottom: 40px;
-}
 /* line 3, ../sass/_contact.scss */
 .contact-form input, .contact-form textarea {
   padding: 10px;
@@ -992,12 +989,9 @@ iframe {
 .contact-form .button {
   display: inline-block;
   width: auto;
+  margin: 0;
 }
 
-/* line 21, ../sass/_contact.scss */
-.contact-info {
-  margin-bottom: 50px;
-}
 /* line 23, ../sass/_contact.scss */
 .contact-info h4 {
   font-size: 18px;
@@ -1021,7 +1015,7 @@ iframe {
 /* line 1, ../sass/_footer.scss */
 .site-footer {
   background: #2d3640;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 /* line 4, ../sass/_footer.scss */
 .site-footer a {
@@ -2469,48 +2463,60 @@ iframe {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 2, ../sass/_responsive.scss */
-  .page-section {
-    padding-top: 30px;
-  }
-  /* line 5, ../sass/_responsive.scss */
+  /* line 3, ../sass/_responsive.scss */
   .page-section .page-heading {
     margin-bottom: 30px;
   }
 
-  /* line 10, ../sass/_responsive.scss */
+  /* line 8, ../sass/_responsive.scss */
   .contact-info {
     margin-bottom: 0;
   }
 
-  /* line 14, ../sass/_responsive.scss */
+  /* line 12, ../sass/_responsive.scss */
   .navbar, .navbar-default, .navbar-static-top {
     height: auto;
     margin-bottom: 0;
   }
 
-  /* line 19, ../sass/_responsive.scss */
+  /* line 17, ../sass/_responsive.scss */
   #undefined-sticky-wrapper, .sticky-wrapper {
     height: auto !important;
   }
 
-  /* line 23, ../sass/_responsive.scss */
+  /* line 21, ../sass/_responsive.scss */
   .is-sticky .navbar.navbar-default.navbar-static-top {
     height: auto;
   }
 
-  /* line 27, ../sass/_responsive.scss */
+  /* line 25, ../sass/_responsive.scss */
+  .gallery-item {
+    margin-bottom: 30px;
+  }
+
+  /* line 29, ../sass/_responsive.scss */
   .gallery-item:last-of-type {
     margin-bottom: 0;
   }
 
-  /* line 31, ../sass/_responsive.scss */
+  /* line 33, ../sass/_responsive.scss */
   #seance hr {
     display: none;
   }
 
-  /* line 35, ../sass/_responsive.scss */
+  /* line 37, ../sass/_responsive.scss */
   .seance-state {
     margin-bottom: 15px;
+  }
+
+  /* line 41, ../sass/_responsive.scss */
+  .seance-state img {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  /* line 46, ../sass/_responsive.scss */
+  .contact-form {
+    margin-bottom: 45px;
   }
 }

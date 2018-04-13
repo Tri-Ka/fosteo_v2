@@ -33,18 +33,26 @@
         <?php include 'templates/slider.html'; ?>
         <?php include 'templates/navigation.html'; ?>
         <?php include 'templates/about.html'; ?>
+
+        <div class="page-section hidden"></div>
+        <div id="rdv">
+            <iframe scrolling="no" src="https://partners.doctolib.fr/osteopathe/evry/coline-fanzutti?locale=fr" style="display: block; box-sizing: content-box; border-bottom: 50px solid #eef2f6; height:304px; min-height: 304px; width: 100%"></iframe>
+            <script src="https://www.doctolib.fr/js/iframeResizer.js"></script>
+            <script>iFrameResize()</script>
+        </div>
+
         <?php include 'templates/osteo.html'; ?>
         <?php include 'templates/gallery.html'; ?>
         <?php include 'templates/seance.html'; ?>
         <?php include 'templates/address.html'; ?>
         <?php include 'templates/photos.html'; ?>
         <?php include 'templates/contact.html'; ?>
-        <?php include 'templates/footer.html'; ?>
+        <?php include 'templates/footer.php'; ?>
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/min/plugins.min.js"></script>
+        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <script>

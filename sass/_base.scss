@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .page-section {
-	padding-top: 60px;
+	padding: 60px 0px;
 }
 
 .page-heading {
@@ -111,7 +111,6 @@ h1, h2, h3, h4, h5 {
 
 .page-section {
 	background: $dark-bg;
-	padding-bottom: 30px;
 
 	&:nth-child(odd){
 		background: $light-bg;
@@ -173,4 +172,12 @@ img {
     	margin-bottom: 60px;
     	display: block;
     }
+}
+
+.is-sticky {
+	padding-top: 59px;
+}
+
+.no-marg {
+	margin: 0 !important;
 }
