@@ -1,17 +1,17 @@
 <?php session_start(); ?>
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Coline FANZUTTI - Ostéopathe</title>
-        <meta name="description" content="Coline FANZUTTI, Ostéopathe DO à Evry - 91000, 1 Square Gustave Flourens. Ostéopathie générale, nourrissons et femmes enceintes. Consultations en cabinet ou à domicile">
-        <meta name="keywords" content="ostéopathe, ostéopathie, evry, massy, la ville-du-bois, orsay, douleur, dos, cou, lombalgie, cervicalgie, céphalée, nourrisson, bébé, enceinte, grossesse, sport">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="description" content="Coline FANZUTTI, Ostéopathe DO à Evry - 91000, 1 Square Gustave Flourens. Ostéopathie générale, nourrissons et femmes enceintes. Consultations en cabinet ou à domicile. Rendez-vous en ligne">
+        <meta name="keywords" content="ostéopathe, ostéopathie, evry, massy, la ville-du-bois, orsay, douleur, dos, cou, lombalgie, cervicalgie, céphalée, nourrisson, bébé, enceinte, grossesse, sport, rendez-vous en ligne">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
         <meta property="og:url"                content="http://www.fanzutti-osteopathe.com"/>
         <meta property="og:title"              content="Coline Fanzutti - Ostéopathe" />
         <meta property="og:description"        content="Bienvenue sur le site de Coline FANZUTTI, Ostéopathe à Evry - 91000, 1 Square Gustave Flourens" />
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css?v=2">
         <link rel="shortcut icon" href="favicon.ico?v2">
     </head>
     <body>
@@ -33,16 +33,9 @@
         <?php include 'templates/slider.html'; ?>
         <?php include 'templates/navigation.html'; ?>
         <?php include 'templates/about.html'; ?>
-
-        <div class="page-section hidden"></div>
-        <div id="rdv">
-            <iframe scrolling="no" src="https://partners.doctolib.fr/osteopathe/evry/coline-fanzutti?locale=fr" style="display: block; box-sizing: content-box; border-bottom: 50px solid #eef2f6; height:304px; min-height: 304px; width: 100%"></iframe>
-            <script src="https://www.doctolib.fr/js/iframeResizer.js"></script>
-            <script>iFrameResize()</script>
-        </div>
-
+        <?php include 'templates/doctolib.html'; ?>
         <?php include 'templates/osteo.html'; ?>
-        <?php include 'templates/gallery.html'; ?>
+        <?php include 'templates/when.html'; ?>
         <?php include 'templates/seance.html'; ?>
         <?php include 'templates/address.html'; ?>
         <?php include 'templates/photos.html'; ?>

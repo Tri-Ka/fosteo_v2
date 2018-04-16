@@ -26,10 +26,6 @@
 		margin-bottom: 30px;
 	}
 
-	.gallery-item:last-of-type {
-		margin-bottom: 0;
-	}
-
 	#seance hr {
 		display: none;
 	}
@@ -45,5 +41,9 @@
 
 	.contact-form {
 		margin-bottom: 45px;
+	}
+
+	.gallery-thumb {
+		margin-bottom: 30px;
 	}
 }

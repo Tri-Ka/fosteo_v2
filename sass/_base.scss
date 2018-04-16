@@ -181,3 +181,17 @@ img {
 .no-marg {
 	margin: 0 !important;
 }
+
+#photos {
+	padding-bottom: 0;
+}
+
+.gallery-item > a{
+	display: block;
+}
+
+.modal-open {
+	#navigation .navbar {
+		padding-right: 15px;
+	}
+}
