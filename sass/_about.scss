@@ -51,8 +51,19 @@
 
 .horaires {
 	display: block;
+}
 
-	&:last-of-type {
-		margin-bottom: 15px;
-	}
+.info-bloc {
+    background: rgba(255, 255, 255, 0.35);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #505f722b;
+}
+
+.red {
+	color: red;
+}
+
+.inline {
+	display: inline-block;
 }

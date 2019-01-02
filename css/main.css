@@ -266,27 +266,32 @@ a:hover {
   text-transform: uppercase;
   font-family: 'robotobold';
 }
-/* line 43, ../sass/_base.scss */
-.button.default {
+/* line 44, ../sass/_base.scss */
+.button.button-nav {
+  background-color: #3c4756;
+  color: #fff;
+}
+/* line 49, ../sass/_base.scss */
+.button.default, .button.button-nav.active {
   background: #e46948;
   color: #fff;
 }
-/* line 47, ../sass/_base.scss */
-.button.default:hover, .button.default:focus {
+/* line 54, ../sass/_base.scss */
+.button.default:hover, .button.default:focus, .button.button-nav.active:hover, .button.button-nav.active:focus {
   background: #e77b5e;
 }
 
-/* line 54, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 .page-section {
   padding: 60px 0px;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 65, ../sass/_base.scss */
 .page-heading {
   margin-bottom: 65px;
 }
 
-/* line 62, ../sass/_base.scss */
+/* line 69, ../sass/_base.scss */
 .page-title {
   font-size: 20px;
   font-family: 'caviarDreams';
@@ -294,18 +299,18 @@ a:hover {
   margin-bottom: 7px;
 }
 
-/* line 69, ../sass/_base.scss */
+/* line 76, ../sass/_base.scss */
 .page-subtitle {
   font-size: 14px;
   font-family: 'caviarDreams';
 }
 
-/* line 74, ../sass/_base.scss */
+/* line 81, ../sass/_base.scss */
 .page-icon-holder {
   text-align: right;
 }
 
-/* line 78, ../sass/_base.scss */
+/* line 85, ../sass/_base.scss */
 .page-icon {
   width: 44px;
   height: 44px;
@@ -316,13 +321,13 @@ a:hover {
   display: inline-block;
 }
 
-/* line 89, ../sass/_base.scss */
+/* line 96, ../sass/_base.scss */
 .social-icons li {
   display: inline-block;
   width: 100%;
   margin-bottom: 5px;
 }
-/* line 94, ../sass/_base.scss */
+/* line 101, ../sass/_base.scss */
 .social-icons a {
   width: 40px;
   height: 40px;
@@ -332,31 +337,31 @@ a:hover {
   color: #fff;
   margin-right: 10px;
 }
-/* line 102, ../sass/_base.scss */
+/* line 109, ../sass/_base.scss */
 .social-icons a:hover {
   background: #e46948;
 }
-/* line 107, ../sass/_base.scss */
+/* line 114, ../sass/_base.scss */
 .social-icons h4 {
   margin: 0 !important;
 }
 
-/* line 112, ../sass/_base.scss */
+/* line 119, ../sass/_base.scss */
 .page-section {
   background: #3c4755;
 }
-/* line 115, ../sass/_base.scss */
+/* line 122, ../sass/_base.scss */
 .page-section:nth-child(odd) {
   background: #e9e9e9;
   color: #3c4755;
 }
 
-/* line 121, ../sass/_base.scss */
+/* line 128, ../sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 125, ../sass/_base.scss */
+/* line 132, ../sass/_base.scss */
 .flash {
   position: fixed;
   top: 90px;
@@ -367,20 +372,20 @@ img {
   border-bottom-left-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
-/* line 135, ../sass/_base.scss */
+/* line 142, ../sass/_base.scss */
 .flash__success {
   background: #4CAF50;
 }
-/* line 139, ../sass/_base.scss */
+/* line 146, ../sass/_base.scss */
 .flash__error {
   background: #F44336;
 }
-/* line 143, ../sass/_base.scss */
+/* line 150, ../sass/_base.scss */
 .flash i {
   margin-right: 10px;
 }
 
-/* line 148, ../sass/_base.scss */
+/* line 155, ../sass/_base.scss */
 .arrow-link {
   position: absolute;
   bottom: 0;
@@ -389,49 +394,49 @@ img {
   left: 50%;
   margin-left: -40px;
 }
-/* line 156, ../sass/_base.scss */
+/* line 163, ../sass/_base.scss */
 .arrow-link:hover, .arrow-link:focus {
   opacity: 0.3;
 }
 
-/* line 162, ../sass/_base.scss */
+/* line 169, ../sass/_base.scss */
 .marged-top {
   margin-top: 30px;
   display: block;
 }
 
-/* line 167, ../sass/_base.scss */
+/* line 174, ../sass/_base.scss */
 .marged-bottom {
   margin-bottom: 30px;
   display: block;
 }
-/* line 171, ../sass/_base.scss */
+/* line 178, ../sass/_base.scss */
 .marged-bottom--big {
   margin-bottom: 60px;
   display: block;
 }
 
-/* line 177, ../sass/_base.scss */
+/* line 184, ../sass/_base.scss */
 .is-sticky {
   padding-top: 59px;
 }
 
-/* line 181, ../sass/_base.scss */
+/* line 188, ../sass/_base.scss */
 .no-marg {
   margin: 0 !important;
 }
 
-/* line 185, ../sass/_base.scss */
+/* line 192, ../sass/_base.scss */
 #photos {
   padding-bottom: 0;
 }
 
-/* line 189, ../sass/_base.scss */
+/* line 196, ../sass/_base.scss */
 .gallery-item > a {
   display: block;
 }
 
-/* line 194, ../sass/_base.scss */
+/* line 201, ../sass/_base.scss */
 .modal-open #navigation .navbar {
   padding-right: 15px;
 }
@@ -634,35 +639,79 @@ html, body {
 
 /* line 88, ../sass/_banner.scss */
 .carousel,
-.item,
-.active {
-  height: 100%;
+.item {
+  height: calc(100vh - 70px);
 }
 
-/* line 94, ../sass/_banner.scss */
+/* line 93, ../sass/_banner.scss */
 .carousel-inner {
-  height: 100%;
+  height: 100vh;
 }
 
-/* line 98, ../sass/_banner.scss */
+/* line 97, ../sass/_banner.scss */
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   min-width: 100%;
   max-height: 100%;
 }
 
-/* line 104, ../sass/_banner.scss */
-.item-1 {
+/* line 103, ../sass/_banner.scss */
+.item-slide {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../img/zen3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  transition: background-image 1s;
 }
 
-/* line 114, ../sass/_banner.scss */
+/* line 113, ../sass/_banner.scss */
+.item-1 {
+  background-image: url(../img/fonds/1.jpg);
+}
+
+/* line 117, ../sass/_banner.scss */
+.item-2 {
+  background-image: url(../img/fonds/2.jpg);
+}
+
+/* line 121, ../sass/_banner.scss */
+.item-3 {
+  background-image: url(../img/fonds/3.jpg);
+}
+
+/* line 125, ../sass/_banner.scss */
+.item-4 {
+  background-image: url(../img/fonds/4.jpg);
+}
+
+/* line 129, ../sass/_banner.scss */
+.item-5 {
+  background-image: url(../img/fonds/5.jpg);
+}
+
+/* line 133, ../sass/_banner.scss */
+.item-6 {
+  background-image: url(../img/fonds/6.jpg);
+}
+
+/* line 137, ../sass/_banner.scss */
+.item-7 {
+  background-image: url(../img/fonds/7.jpg);
+}
+
+/* line 141, ../sass/_banner.scss */
+.item-8 {
+  background-image: url(../img/fonds/8.jpg);
+}
+
+/* line 145, ../sass/_banner.scss */
+.item-9 {
+  background-image: url(../img/fonds/9.jpg);
+}
+
+/* line 149, ../sass/_banner.scss */
 .cache {
   background-color: #3c4755;
   opacity: 0.7;
@@ -673,7 +722,7 @@ html, body {
   bottom: 0;
 }
 
-/* line 124, ../sass/_banner.scss */
+/* line 159, ../sass/_banner.scss */
 .carousel-caption {
   position: absolute;
   width: 100%;
@@ -681,23 +730,27 @@ html, body {
   top: 10%;
   bottom: auto;
   text-shadow: none !important;
+  padding: 0;
+  top: 50%;
+  margin-top: -270px;
+  height: 540px;
 }
-/* line 131, ../sass/_banner.scss */
+/* line 171, ../sass/_banner.scss */
 .carousel-caption img {
   max-width: 80%;
 }
-/* line 134, ../sass/_banner.scss */
+/* line 175, ../sass/_banner.scss */
 .carousel-caption h2 {
   font-size: 44px;
   font-family: 'caviarDreams';
 }
-/* line 139, ../sass/_banner.scss */
+/* line 180, ../sass/_banner.scss */
 .carousel-caption h3 {
   font-size: 54px;
   font-family: 'caviarDreams';
   margin-bottom: 30px;
 }
-/* line 145, ../sass/_banner.scss */
+/* line 186, ../sass/_banner.scss */
 .carousel-caption p {
   font-size: 18px;
   line-height: 24px;
@@ -705,57 +758,57 @@ html, body {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 992px) {
-  /* line 124, ../sass/_banner.scss */
+  /* line 159, ../sass/_banner.scss */
   .carousel-caption {
     top: 10%;
   }
-  /* line 153, ../sass/_banner.scss */
+  /* line 194, ../sass/_banner.scss */
   .carousel-caption h2 {
     font-size: 24px;
   }
-  /* line 156, ../sass/_banner.scss */
+  /* line 197, ../sass/_banner.scss */
   .carousel-caption h3 {
     font-size: 30px;
   }
-  /* line 159, ../sass/_banner.scss */
+  /* line 200, ../sass/_banner.scss */
   .carousel-caption p {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 124, ../sass/_banner.scss */
+  /* line 159, ../sass/_banner.scss */
   .carousel-caption {
     top: 5%;
   }
 }
 
-/* line 170, ../sass/_banner.scss */
+/* line 211, ../sass/_banner.scss */
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;
 }
-/* line 174, ../sass/_banner.scss */
+/* line 215, ../sass/_banner.scss */
 .carousel-fade .carousel-inner .active {
   opacity: 1;
 }
-/* line 178, ../sass/_banner.scss */
+/* line 219, ../sass/_banner.scss */
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   opacity: 0;
   z-index: 1;
 }
-/* line 184, ../sass/_banner.scss */
+/* line 225, ../sass/_banner.scss */
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 190, ../sass/_banner.scss */
+/* line 231, ../sass/_banner.scss */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
 
-/* line 196, ../sass/_banner.scss */
+/* line 237, ../sass/_banner.scss */
 .go-down {
   width: 40px;
   height: 40px;
@@ -765,7 +818,7 @@ html, body {
   color: #fff;
   display: inline-block;
 }
-/* line 204, ../sass/_banner.scss */
+/* line 245, ../sass/_banner.scss */
 .go-down:hover {
   color: #e46948;
   border-color: #e46948;
@@ -835,9 +888,23 @@ html, body {
 .horaires {
   display: block;
 }
-/* line 55, ../sass/_about.scss */
-.horaires:last-of-type {
+
+/* line 56, ../sass/_about.scss */
+.info-bloc {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 15px;
   margin-bottom: 15px;
+  border: 1px solid #505f722b;
+}
+
+/* line 63, ../sass/_about.scss */
+.red {
+  color: red;
+}
+
+/* line 67, ../sass/_about.scss */
+.inline {
+  display: inline-block;
 }
 
 /*------ projects ------ */
@@ -960,6 +1027,26 @@ html, body {
 /* line 32, ../sass/_address.scss */
 iframe {
   width: 100%;
+}
+
+/* line 36, ../sass/_address.scss */
+.boxed {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 0 .3em;
+  border-bottom-width: 4px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-top: -4px;
+}
+/* line 49, ../sass/_address.scss */
+.boxed .text {
+  font-weight: bold;
+  font-size: 12px;
 }
 
 /*------ osteo ------ */
@@ -2533,5 +2620,17 @@ iframe {
   /* line 46, ../sass/_responsive.scss */
   .gallery-thumb {
     margin-bottom: 30px;
+  }
+
+  /* line 50, ../sass/_responsive.scss */
+  .carousel-caption {
+    top: 50%;
+    height: 300px;
+    margin-top: -150px;
+  }
+
+  /* line 56, ../sass/_responsive.scss */
+  .carousel, .item, .active {
+    height: calc(100vh - 60px);
   }
 }

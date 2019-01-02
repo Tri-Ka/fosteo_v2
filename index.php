@@ -22,15 +22,14 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css?v=2">
         <link rel="shortcut icon" href="favicon.ico?v2">
+        <script src='https://www.google.com/recaptcha/api.js?hl=fr'></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <?php include 'actions/flash.php'; ?>
-
-        <?php include 'templates/slider.html'; ?>
+        <?php include 'templates/slider.php'; ?>
         <?php include 'templates/navigation.html'; ?>
         <?php include 'templates/about.html'; ?>
         <?php include 'templates/doctolib.html'; ?>

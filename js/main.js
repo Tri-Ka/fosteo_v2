@@ -59,6 +59,11 @@ $.fn.extend({
         }, 600);
 	});
 
+	$('.button-nav').on('click', function(){
+		$(this).parent().find('.active').removeClass('active');
+		$(this).addClass('active');
+	});
+
 	setTimeout(
 		function(){
 			$('[data-flash]').animateCss('fadeOutRight', function(){
@@ -66,5 +71,10 @@ $.fn.extend({
 			});
 		},
 	4000);
+
+	setInterval(function(){
+		var randNumber = Math.floor((Math.random() * 9) + 1);
+	  	$('.item-slide').removeClass().addClass('item-slide item-' + randNumber)
+	}, 10000);
 
 })(jQuery);

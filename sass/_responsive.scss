@@ -46,4 +46,14 @@
 	.gallery-thumb {
 		margin-bottom: 30px;
 	}
+
+	.carousel-caption {
+		top: 50%;
+	    height: 300px;
+	    margin-top: -150px;
+	}
+
+	.carousel, .item, .active {
+		height: calc(100vh - 60px);
+	}
 }

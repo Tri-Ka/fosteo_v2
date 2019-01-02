@@ -32,3 +32,22 @@
 iframe {
 	width: 100%;
 }
+
+.boxed {
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 0 .3em;
+	border-bottom-width: 4px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-top: -4px;
+
+    .text {
+	    font-weight: bold;
+    	font-size: 12px;
+    }
+}
