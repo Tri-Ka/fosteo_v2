@@ -441,6 +441,15 @@ img {
   padding-right: 15px;
 }
 
+/* line 206, ../sass/_base.scss */
+.g-recaptcha {
+  width: 300px;
+}
+/* line 209, ../sass/_base.scss */
+.g-recaptcha div {
+  width: 100% !important;
+}
+
 /*---------------------------------------------------------
  3. Header
 -------------------------------------------------------- */
@@ -645,7 +654,7 @@ html, body {
 
 /* line 93, ../sass/_banner.scss */
 .carousel-inner {
-  height: 100vh;
+  height: 100%;
 }
 
 /* line 97, ../sass/_banner.scss */
@@ -899,12 +908,18 @@ html, body {
 
 /* line 63, ../sass/_about.scss */
 .red {
-  color: red;
+  color: #e62638;
 }
 
 /* line 67, ../sass/_about.scss */
 .inline {
   display: inline-block;
+}
+
+/* line 71, ../sass/_about.scss */
+.ico-parking {
+  font-family: inherit;
+  font-weight: bold;
 }
 
 /*------ projects ------ */
@@ -2630,7 +2645,12 @@ iframe {
   }
 
   /* line 56, ../sass/_responsive.scss */
-  .carousel, .item, .active {
+  .carousel, .item {
     height: calc(100vh - 60px);
+  }
+
+  /* line 60, ../sass/_responsive.scss */
+  .g-recaptcha {
+    width: 100%;
   }
 }

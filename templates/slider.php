@@ -1,6 +1,12 @@
 <div id="home" class="carousel slide carousel-fade" data-ride="carousel">
     <?php include 'actions/flash.php'; ?>
 
+    <div class="hidden">
+        <?php for ($i = 1; $i < 10; $i++) : ?>
+            <img src="img/fonds/<?php echo $i; ?>.jpg">
+        <?php endfor; ?>
+    </div>
+
     <div class="carousel-inner">
         <div class="item active">
             <div class="item-slide item-<?php echo rand(1, 9); ?>"></div>

@@ -53,7 +53,11 @@
 	    margin-top: -150px;
 	}
 
-	.carousel, .item, .active {
+	.carousel, .item {
 		height: calc(100vh - 60px);
+	}
+
+	.g-recaptcha {
+		width: 100%;
 	}
 }
