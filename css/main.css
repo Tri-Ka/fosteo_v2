@@ -450,6 +450,18 @@ img {
   width: 100% !important;
 }
 
+/* line 214, ../sass/_base.scss */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: none;
+}
+
+/* line 219, ../sass/_base.scss */
+.button + .button {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 /*---------------------------------------------------------
  3. Header
 -------------------------------------------------------- */

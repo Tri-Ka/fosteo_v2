@@ -210,3 +210,13 @@ img {
 		width: 100% !important;
 	}
 }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background: none;
+}
+
+.button + .button {
+	margin-right: 15px;
+	margin-left: 15px;
+}

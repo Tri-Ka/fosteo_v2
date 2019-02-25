@@ -9,18 +9,18 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Coline FANZUTTI - Ostéopathe</title>
-        <meta name="description" content="Coline FANZUTTI, Ostéopathe DO à Evry - 91000, 1 Square Gustave Flourens. Ostéopathie générale, nourrissons et femmes enceintes. Consultations en cabinet ou à domicile. Rendez-vous en ligne">
-        <meta name="keywords" content="ostéopathe, ostéopathie, evry, massy, la ville-du-bois, orsay, douleur, dos, cou, lombalgie, cervicalgie, céphalée, nourrisson, bébé, enceinte, grossesse, sport, rendez-vous en ligne">
+        <meta name="description" content="Coline FANZUTTI, Ostéopathe DO à Nozay - 91620, 15 rue des Maraîchers. Ostéopathie générale, nourrissons et femmes enceintes. Consultations en cabinet ou à domicile. Rendez-vous en ligne">
+        <meta name="keywords" content="ostéopathe, ostéopathie, nozay, 91, essonne, orsay, evry, massy, marcoussis, villejust, les ulis, la ville-du-bois, ballainvilliers, saulx-les-chartreux, montlhéry, villiers-sur-orge, douleur, dos, cou, lombalgie, cervicalgie, céphalée, nourrisson, bébé, enceinte, grossesse, sport, rendez-vous en ligne">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
         <meta property="og:url"                content="http://www.fanzutti-osteopathe.com"/>
         <meta property="og:title"              content="Coline Fanzutti - Ostéopathe" />
-        <meta property="og:description"        content="Bienvenue sur le site de Coline FANZUTTI, Ostéopathe à Evry - 91000, 1 Square Gustave Flourens" />
+        <meta property="og:description"        content="Bienvenue sur le site de Coline FANZUTTI, Ostéopathe à Nozay - 91620, 15 rue des Maraîchers" />
         <meta property="og:image"              content="http://www.fanzutti-osteopathe.com/img/og-fb.jpg" />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/main.css?v=2">
+        <link rel="stylesheet" href="css/main.css?v=3">
         <link rel="shortcut icon" href="favicon.ico?v2">
         <script src='https://www.google.com/recaptcha/api.js?hl=fr'></script>
     </head>
