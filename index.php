@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/main.css?v=3">
+        <link rel="stylesheet" href="css/main.css?v=4">
         <link rel="shortcut icon" href="favicon.ico?v2">
         <script src='https://www.google.com/recaptcha/api.js?hl=fr'></script>
     </head>

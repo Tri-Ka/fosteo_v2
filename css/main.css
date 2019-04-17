@@ -462,6 +462,16 @@ img {
   margin-left: 15px;
 }
 
+/* line 224, ../sass/_base.scss */
+.gallery-title {
+  display: block;
+  text-align: center;
+  background: #e46948;
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
 /*---------------------------------------------------------
  3. Header
 -------------------------------------------------------- */
@@ -687,52 +697,57 @@ html, body {
   transition: background-image 1s;
 }
 
-/* line 113, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
 .item-1 {
   background-image: url(../img/fonds/1.jpg);
 }
 
-/* line 117, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
 .item-2 {
   background-image: url(../img/fonds/2.jpg);
 }
 
-/* line 121, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
 .item-3 {
   background-image: url(../img/fonds/3.jpg);
 }
 
-/* line 125, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
 .item-4 {
   background-image: url(../img/fonds/4.jpg);
 }
 
-/* line 129, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
 .item-5 {
   background-image: url(../img/fonds/5.jpg);
 }
 
-/* line 133, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
 .item-6 {
   background-image: url(../img/fonds/6.jpg);
 }
 
-/* line 137, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
 .item-7 {
   background-image: url(../img/fonds/7.jpg);
 }
 
-/* line 141, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
 .item-8 {
   background-image: url(../img/fonds/8.jpg);
 }
 
-/* line 145, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
 .item-9 {
   background-image: url(../img/fonds/9.jpg);
 }
 
-/* line 149, ../sass/_banner.scss */
+/* line 114, ../sass/_banner.scss */
+.item-10 {
+  background-image: url(../img/fonds/10.jpg);
+}
+
+/* line 119, ../sass/_banner.scss */
 .cache {
   background-color: #3c4755;
   opacity: 0.7;
@@ -743,7 +758,7 @@ html, body {
   bottom: 0;
 }
 
-/* line 159, ../sass/_banner.scss */
+/* line 129, ../sass/_banner.scss */
 .carousel-caption {
   position: absolute;
   width: 100%;
@@ -756,22 +771,22 @@ html, body {
   margin-top: -270px;
   height: 540px;
 }
-/* line 171, ../sass/_banner.scss */
+/* line 141, ../sass/_banner.scss */
 .carousel-caption img {
   max-width: 80%;
 }
-/* line 175, ../sass/_banner.scss */
+/* line 145, ../sass/_banner.scss */
 .carousel-caption h2 {
   font-size: 44px;
   font-family: 'caviarDreams';
 }
-/* line 180, ../sass/_banner.scss */
+/* line 150, ../sass/_banner.scss */
 .carousel-caption h3 {
   font-size: 54px;
   font-family: 'caviarDreams';
   margin-bottom: 30px;
 }
-/* line 186, ../sass/_banner.scss */
+/* line 156, ../sass/_banner.scss */
 .carousel-caption p {
   font-size: 18px;
   line-height: 24px;
@@ -779,57 +794,57 @@ html, body {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 992px) {
-  /* line 159, ../sass/_banner.scss */
+  /* line 129, ../sass/_banner.scss */
   .carousel-caption {
     top: 10%;
   }
-  /* line 194, ../sass/_banner.scss */
+  /* line 164, ../sass/_banner.scss */
   .carousel-caption h2 {
     font-size: 24px;
   }
-  /* line 197, ../sass/_banner.scss */
+  /* line 167, ../sass/_banner.scss */
   .carousel-caption h3 {
     font-size: 30px;
   }
-  /* line 200, ../sass/_banner.scss */
+  /* line 170, ../sass/_banner.scss */
   .carousel-caption p {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 159, ../sass/_banner.scss */
+  /* line 129, ../sass/_banner.scss */
   .carousel-caption {
     top: 5%;
   }
 }
 
-/* line 211, ../sass/_banner.scss */
+/* line 181, ../sass/_banner.scss */
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;
 }
-/* line 215, ../sass/_banner.scss */
+/* line 185, ../sass/_banner.scss */
 .carousel-fade .carousel-inner .active {
   opacity: 1;
 }
-/* line 219, ../sass/_banner.scss */
+/* line 189, ../sass/_banner.scss */
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   opacity: 0;
   z-index: 1;
 }
-/* line 225, ../sass/_banner.scss */
+/* line 195, ../sass/_banner.scss */
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 231, ../sass/_banner.scss */
+/* line 201, ../sass/_banner.scss */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
 
-/* line 237, ../sass/_banner.scss */
+/* line 207, ../sass/_banner.scss */
 .go-down {
   width: 40px;
   height: 40px;
@@ -839,7 +854,7 @@ html, body {
   color: #fff;
   display: inline-block;
 }
-/* line 245, ../sass/_banner.scss */
+/* line 215, ../sass/_banner.scss */
 .go-down:hover {
   color: #e46948;
   border-color: #e46948;

@@ -110,40 +110,10 @@ html,body{height:100%;}
 	transition: background-image 1s;
 }
 
-.item-1 {
-	background-image: url(../img/fonds/1.jpg);
-}
-
-.item-2 {
-	background-image: url(../img/fonds/2.jpg);
-}
-
-.item-3 {
-	background-image: url(../img/fonds/3.jpg);
-}
-
-.item-4 {
-	background-image: url(../img/fonds/4.jpg);
-}
-
-.item-5 {
-	background-image: url(../img/fonds/5.jpg);
-}
-
-.item-6 {
-	background-image: url(../img/fonds/6.jpg);
-}
-
-.item-7 {
-	background-image: url(../img/fonds/7.jpg);
-}
-
-.item-8 {
-	background-image: url(../img/fonds/8.jpg);
-}
-
-.item-9 {
-	background-image: url(../img/fonds/9.jpg);
+@for $i from 1 through 10 {
+    .item-#{$i} {
+        background-image: url(../img/fonds/#{$i}.jpg);
+    }
 }
 
 .cache {

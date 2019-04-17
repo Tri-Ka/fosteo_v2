@@ -90,7 +90,7 @@ $.fn.extend({
 	4000);
 
 	setInterval(function(){
-		var randNumber = Math.floor((Math.random() * 9) + 1);
+		var randNumber = Math.floor((Math.random() * 10) + 1);
 	  	$('.item-slide').removeClass().addClass('item-slide item-' + randNumber)
 	}, 10000);
 
