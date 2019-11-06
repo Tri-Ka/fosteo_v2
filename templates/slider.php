@@ -15,7 +15,7 @@
                     <div class="col-md-offset-2 col-md-8 col-sm-12" id="logo-container" data-scroll-top>
                         <img class="animated fadeInDown" src="img/logo-2.png" alt="logo" title="logo">
                         <h1 class="animated fadeInUp">Coline <span class="accent">FANZUTTI</span></h1>
-                        <h3 class="animated fadeInUp">OSTÉOPATHE</h3>
+                        <h2 class="animated fadeInUp">OSTÉOPATHE</h2>
                     </div>
                 </div>
             </div>

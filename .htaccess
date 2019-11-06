@@ -1,0 +1,8 @@
+#RewriteEngine On
+RewriteEngine Off
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www.fanzutti-osteopathe.com$
+RewriteRule (.*) https://www.fanzutti-osteopathe.com/$1 [L,R=301]
+RewriteCond %{THE_REQUEST} ^.*/index\.php 
+RewriteRule ^(.*)index.php$ /$1 [R=301,L] 
