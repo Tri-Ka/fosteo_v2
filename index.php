@@ -6,17 +6,10 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
     <head>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-58GLKDX');</script>
-        <!-- End Google Tag Manager -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Coline FANZUTTI - Ostéopathe</title>
-        <meta name="description" content="Coline FANZUTTI, Ostéopathe DO à Nozay - 91620, 15 rue des Maraîchers. Ostéopathie générale, nourrissons et femmes enceintes. Consultations en cabinet ou à domicile. Rendez-vous en ligne">
+        <meta name="description" content="Bienvenue sur le site de Coline FANZUTTI, Ostéopathe DO à Nozay - 91620, 15 rue des Maraîchers, Essonne. Ostéopathie générale, nourrissons et femmes enceintes.">
         <meta name="keywords" content="ostéopathe, ostéopathie, nozay, 91, essonne, coline, fanzutti, coline fanzutti, orsay, evry, massy, marcoussis, villejust, les ulis, la ville-du-bois, ballainvilliers, saulx-les-chartreux, montlhéry, villiers-sur-orge, douleur, dos, cou, lombalgie, cervicalgie, céphalée, nourrisson, bébé, enceinte, grossesse, sport, rendez-vous en ligne">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
         <meta property="og:type"               content="website"/>
@@ -37,11 +30,6 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58GLKDX"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
 
         <?php include 'templates/slider.php'; ?>
         <?php include 'templates/navigation.html'; ?>
