@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/main.css?v=5">
+        <link rel="stylesheet" href="css/main.css?v=6">
         <link rel="shortcut icon" href="favicon.ico?v2">
         <link rel="canonical" href="https://www.fanzutti-osteopathe.com" />
         <script src='https://www.google.com/recaptcha/api.js?hl=fr'></script>
