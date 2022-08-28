@@ -3,7 +3,7 @@
 
     <div class="hidden">
         <?php for ($i = 1; $i < 10; $i++) : ?>
-            <img src="img/fonds/<?php echo $i; ?>.jpg">
+            <img src="img/fonds/<?php echo $i; ?>.jpg" alt="fond-<?php echo $i; ?>">
         <?php endfor; ?>
     </div>
 
@@ -14,8 +14,8 @@
                 <div class="container">
                     <div class="col-md-offset-2 col-md-8 col-sm-12" id="logo-container" data-scroll-top>
                         <img class="animated fadeInDown" src="img/logo-2.png" alt="logo" title="logo">
-                        <h2 class="animated fadeInUp">Coline <span class="accent">FANZUTTI</span></h2>
-                        <h3 class="animated fadeInUp">OSTÉOPATHE</h3>
+                        <h1 class="animated fadeInUp">Coline <span class="accent">FANZUTTI</span></h1>
+                        <h2 class="animated fadeInUp">OSTÉOPATHE</h2>
                     </div>
                 </div>
             </div>

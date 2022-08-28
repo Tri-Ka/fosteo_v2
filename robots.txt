@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://fanzutti-osteopathe.com/sitemap.xml

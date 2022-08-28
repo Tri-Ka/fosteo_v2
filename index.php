@@ -8,27 +8,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Coline FANZUTTI - Ostéopathe</title>
-        <meta name="description" content="Coline FANZUTTI, Ostéopathe DO à Nozay - 91620, 15 rue des Maraîchers. Ostéopathie générale, nourrissons et femmes enceintes. Consultations en cabinet ou à domicile. Rendez-vous en ligne">
-        <meta name="keywords" content="ostéopathe, ostéopathie, nozay, 91, essonne, orsay, evry, massy, marcoussis, villejust, les ulis, la ville-du-bois, ballainvilliers, saulx-les-chartreux, montlhéry, villiers-sur-orge, douleur, dos, cou, lombalgie, cervicalgie, céphalée, nourrisson, bébé, enceinte, grossesse, sport, rendez-vous en ligne">
+        <title>Coline FANZUTTI - Ostéopathe à Nozay</title>
+        <meta name="description" content="Bienvenue sur le site de Coline FANZUTTI, Ostéopathe DO à Nozay - 91620, 15 rue des Maraîchers, Essonne. Ostéopathie générale, nourrissons et femmes enceintes.">
+        <meta name="keywords" content="ostéopathe, ostéopathie, nozay, 91, essonne, coline, fanzutti, coline fanzutti, orsay, evry, massy, marcoussis, villejust, les ulis, la ville-du-bois, ballainvilliers, saulx-les-chartreux, montlhéry, villiers-sur-orge, douleur, dos, cou, lombalgie, cervicalgie, céphalée, nourrisson, bébé, enceinte, grossesse, sport, rendez-vous en ligne">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-        <meta property="og:url"                content="http://www.fanzutti-osteopathe.com"/>
-        <meta property="og:title"              content="Coline Fanzutti - Ostéopathe" />
+        <meta property="og:type"               content="website"/>
+        <meta property="og:url"                content="https://www.fanzutti-osteopathe.com"/>
+        <meta property="og:title"              content="Coline Fanzutti - Ostéopathe à Nozay" />
         <meta property="og:description"        content="Bienvenue sur le site de Coline FANZUTTI, Ostéopathe à Nozay - 91620, 15 rue des Maraîchers" />
-        <meta property="og:image"              content="http://www.fanzutti-osteopathe.com/img/og-fb.jpg" />
-        <link rel="stylesheet" href="css/normalize.css">
+        <meta property="og:image"              content="https://www.fanzutti-osteopathe.com/img/og-fb.jpg" />
+        <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/main.css?v=4">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/main.css?v=5">
         <link rel="shortcut icon" href="favicon.ico?v2">
+        <link rel="canonical" href="https://www.fanzutti-osteopathe.com" />
         <script src='https://www.google.com/recaptcha/api.js?hl=fr'></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
         <?php include 'templates/slider.php'; ?>
         <?php include 'templates/navigation.html'; ?>
         <?php include 'templates/about.html'; ?>
@@ -44,8 +42,8 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/plugins.min.js"></script>
+        <script src="js/main.min.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

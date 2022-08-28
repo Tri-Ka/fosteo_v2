@@ -94,4 +94,17 @@ $.fn.extend({
 	  	$('.item-slide').removeClass().addClass('item-slide item-' + randNumber)
 	}, 10000);
 
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+
+	$('[data-toggle="popover"]').on('click', function(e){
+		e.stopPropagation();
+		e.preventDefault();
+	})
+
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
 })(jQuery);
