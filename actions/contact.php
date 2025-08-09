@@ -5,6 +5,7 @@
     error_reporting(E_ERROR);
 
     $mailTo = 'fanzutti.osteo@gmail.com';
+    $mailFrom = 'contact@fanzutti-osteopathe.com';
     // $mailTo = 'datcharrye@gmail.com';
 
 if (!function_exists('filter_var')) {
@@ -55,7 +56,7 @@ foreach ($values as $k => $value) {
 if (empty($_SESSION['err']) && !empty($values)) {
     $to = $mailTo;
     $subject = 'Message de la part de '.strip_tags($values['name']).' : '.strip_tags($values['subject']);
-    $headers = 'From: '.strip_tags($values['email'])."\r\n";
+    $headers = 'From: '.strip_tags($mailFrom)."\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
