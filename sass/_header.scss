@@ -17,8 +17,9 @@
 
 .navbar-default .navbar-nav>li>a {
 	color: $white;
-	letter-spacing: 2px;
-	font-family: 'caviarDreams';
+    letter-spacing: 1px;
+    font-family: "caviarDreams";
+    font-size: 14px;
 	&.current {
 		color: $accent;
 		&:hover {

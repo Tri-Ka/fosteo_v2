@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row page-heading">
             <div class="col-md-8 col-sm-8">
-                <h3 class="page-title">Adresses</h3>
+                <h3 class="page-title">Adresse et plan d’accès</h3>
             </div>
             <div class="col-md-4 col-sm-4 hidden-xs text-right">
-                <p class="page-icon"><i class="fa fa-map-marker"></i></p>
+                <p class="page-icon" aria-hidden="true"><i class="fa fa-map-marker"></i></p>
             </div>
         </div>
 
@@ -13,25 +13,41 @@
             <div class="tab-pane active" id="nozay" role="tabpanel" aria-labelledby="nozay-tab">
                 <div class="row">
                     <div class="col-md-8 col-sm-12">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.103132889815!2d2.2389547154177185!3d48.65949478315547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd20b9404c982b55!2sColine+Fanzutti+-+Ost%C3%A9opathe+DO!5e0!3m2!1sfr!2sfr!4v1551084354126" height="450" allowfullscreen></iframe>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.103132889815!2d2.2389547154177185!3d48.65949478315547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd20b9404c982b55!2sColine+Fanzutti+-+Ost%C3%A9opathe+DO!5e0!3m2!1sfr!2sfr!4v1551084354126" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen 
+                            loading="lazy" 
+                            title="Carte Google Maps du cabinet d’ostéopathie à Nozay"
+                            aria-label="Carte Google Maps du cabinet d’ostéopathie situé au 15 Rue des Maraîchers, 91620 Nozay"
+                        ></iframe>
                     </div>
 
-                    <div class="col-md-4 col-sm-12">
-                        <div class="address-info">
-                            <h4>15 Rue des Maraîchers</h4>
-                            <h5>91620 - Nozay</h5>
+                    <aside class="col-md-4 col-sm-12 address-info" role="complementary" aria-label="Informations d’adresse et accès">
+                        <h4>15 Rue des Maraîchers</h4>
+                        <h5>91620 - Nozay, Île-de-France</h5>
 
-                            <ul class="social-icons">
-                                <li><a href="#" class="fa fa-bus" title="bus"></a><img class="img-rer" src="img/bus.png" alt="DM11 C" title="DM11 C"><div class="boxed" style="border-bottom-color: #000000"><span class="text">DM11 C</span></div> - Versailles</li>
-                                <li><a href="#" class="fa fa-wheelchair" title="acces handicapé"></a> Accès handicapé</li>
-                                <li><a href="#" class="fa ico-parking" title="parking" data-toggle="popover" data-content="Parking gratuit au niveau du 12 rue St-Germain">P</a> Parking gratuit</li>
-                            </ul>
-                        </div>
+                        <ul class="social-icons" aria-label="Moyens d’accès et services">
+                            <li>
+                                <a href="#" class="fa fa-bus" title="Ligne de bus" aria-hidden="true"></a>
+                                <img class="img-rer" src="img/bus.png" alt="Logo bus DM11 C" title="Ligne de bus DM11 C" />
+                                <span><span class="boxed" style="border-bottom-color: #000000"><span class="text" style="color:#3c4755">DM11 C</span></span> - Versailles</span>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-wheelchair" title="Accès handicapé" aria-hidden="true"></a> 
+                                <span>Accès handicapé disponible</span>
+                            </li>
+                            <li>
+                                <a href="#" class="fa ico-parking" title="Parking" data-toggle="popover" data-content="Parking gratuit au niveau du 12 rue St-Germain" aria-describedby="parking-info">P</a>
+                                <span id="parking-info">Parking gratuit à proximité</span>
+                            </li>
+                        </ul>
 
-                        <a href="img/map-nozay.jpg" title="nozay" class="marged-top hidden-xs" target="_blank">
-                            <img src="img/map-nozay.jpg" title="map-nozay" alt="map-nozay">
+                        <a href="img/map-nozay.jpg" title="Plan du cabinet à Nozay" class="marged-top hidden-xs" target="_blank" rel="noopener noreferrer">
+                            <img src="img/map-nozay.jpg" alt="Plan détaillé du cabinet d’ostéopathie situé à Nozay" title="Plan du cabinet à Nozay">
                         </a>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </div>
