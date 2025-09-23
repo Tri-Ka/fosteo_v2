@@ -34,17 +34,12 @@ iframe {
 }
 
 .boxed {
-	border: 1px solid #ddd;
-	background: #fff;
-	padding: 0 .3em;
-	border-bottom-width: 4px;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
-	border-bottom-color: transparent;
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 10px;
-	margin-top: -4px;
+    padding: 0 .7em;
+    vertical-align: middle;
+    background-color: rgb(255, 206, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    display: inline-flex;
 
     .text {
 	    font-weight: bold;
