@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: fosteo_web
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - APACHE_SERVER_NAME=perso.fosteo
+    networks:
+      - fosteo_network
+    depends_on:
+      - maildev
+    restart: unless-stopped
+
+  maildev:
+    image: maildev/maildev
+    container_name: fosteo_maildev
+    ports:
+      - "1080:1080"  # Interface web
+      - "1025:1025"  # SMTP
+    networks:
+      - fosteo_network
+    restart: unless-stopped
+
+networks:
+  fosteo_network:
+    driver: bridge

@@ -115,7 +115,7 @@
         <?php include 'templates/seance.html'; ?>
         <?php include 'templates/address.html'; ?>
         <?php include 'templates/photos.html'; ?>
-        <?php include 'templates/contact.html'; ?>
+        <?php include 'templates/contact.php'; ?>
     </main>
 
     <!-- Footer -->

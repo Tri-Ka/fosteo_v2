@@ -1,0 +1,9 @@
+.git
+.gitignore
+.DS_Store
+*.md
+check_config.php
+.vscode
+node_modules
+sass/**/*.scss
+sass/**/config.rb

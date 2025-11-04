@@ -1,0 +1,29 @@
+# .htaccess pour développement Docker local
+# Ce fichier est utilisé automatiquement dans le conteneur Docker
+
+# Désactiver HTTPS redirect en local
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Permettre l'accès depuis n'importe quel domaine en local
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirection index.php (optionnel)
+    RewriteCond %{THE_REQUEST} ^.*/index\.php 
+    RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+</IfModule>
+
+# Configuration PHP pour le développement
+<IfModule mod_php.c>
+    php_flag display_errors On
+    php_flag display_startup_errors On
+    php_value error_reporting E_ALL
+</IfModule>
+
+# Autoriser l'accès aux fichiers
+<Files *>
+    Order allow,deny
+    Allow from all
+</Files>

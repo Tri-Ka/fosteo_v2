@@ -21,6 +21,12 @@
         <div class="row">
             <div class="col-md-9 col-sm-12">
                 <form action="actions/contact.php" method="post" class="row contact-form" aria-label="Formulaire de contact ostéopathe">
+                    <!-- Champ honeypot (piège à bots) - invisible pour les humains -->
+                    <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
+                    
+                    <!-- Timestamp pour détecter les soumissions trop rapides -->
+                    <input type="hidden" name="form_timestamp" value="<?php echo time(); ?>">
+                    
                     <fieldset class="col-sm-6 col-xs-12">
                         <label for="name" class="sr-only">Votre nom</label>
                         <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
