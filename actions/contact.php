@@ -10,8 +10,6 @@
     $mailTo = MAIL_TO;
     $mailFrom = MAIL_FROM;
 
-    // $mailTo = 'datcharrye@gmail.com';
-
 if (!function_exists('filter_var')) {
     define('FILTER_VALIDATE_EMAIL', 'email');
 
@@ -152,9 +150,12 @@ if (empty($_SESSION['err']) && !empty($values)) {
 
     $message = file_get_contents('../templates/_email.html', FILE_USE_INCLUDE_PATH);
 
-    $message = str_replace('%username%', $values['name'], $message);
-    $message = str_replace('%message%', $values['message'], $message);
-    $message = str_replace('%mailaddress%', $values['email'], $message);
+    // Convertir les sauts de ligne en <br> pour l'affichage HTML
+    $messageContent = nl2br(htmlspecialchars($values['message'], ENT_QUOTES, 'UTF-8'));
+    
+    $message = str_replace('%username%', htmlspecialchars($values['name'], ENT_QUOTES, 'UTF-8'), $message);
+    $message = str_replace('%message%', $messageContent, $message);
+    $message = str_replace('%mailaddress%', htmlspecialchars($values['email'], ENT_QUOTES, 'UTF-8'), $message);
 
     mail($to, $subject, $message, $headers);
     $_SESSION['success'] = 'Merci, votre message a bien été envoyé !';
