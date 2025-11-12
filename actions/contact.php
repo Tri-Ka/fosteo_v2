@@ -28,6 +28,156 @@ if (!function_exists('filter_var')) {
     }
 }
 
+// Basic language heuristic so we only accept messages that look French
+function isFrenchText($text)
+{
+    if ('' === trim($text)) {
+        return false;
+    }
+
+    static $frenchCommonWords = array(
+        'bonjour' => true,
+        'merci' => true,
+        'salut' => true,
+        'bien' => true,
+        'santé' => true,
+        'douleur' => true,
+        'pour' => true,
+        'avec' => true,
+        'sans' => true,
+        'dans' => true,
+        'chez' => true,
+        'entre' => true,
+        'sur' => true,
+        'sous' => true,
+        'avant' => true,
+        'après' => true,
+        'pendant' => true,
+        'depuis' => true,
+        'toujours' => true,
+        'souvent' => true,
+        'jamais' => true,
+        'je' => true,
+        'tu' => true,
+        'il' => true,
+        'elle' => true,
+        'nous' => true,
+        'vous' => true,
+        'ils' => true,
+        'elles' => true,
+        'mon' => true,
+        'ma' => true,
+        'mes' => true,
+        'notre' => true,
+        'nos' => true,
+        'votre' => true,
+        'vos' => true,
+        'leur' => true,
+        'leurs' => true,
+        'un' => true,
+        'une' => true,
+        'des' => true,
+        'le' => true,
+        'la' => true,
+        'les' => true,
+        'du' => true,
+        'de' => true,
+        'au' => true,
+        'aux' => true,
+        'ce' => true,
+        'cet' => true,
+        'cette' => true,
+        'ces' => true,
+        'quand' => true,
+        'comment' => true,
+        'pourquoi' => true,
+        'parce' => true,
+        'que' => true,
+        'donc' => true,
+        'car' => true,
+        'mais' => true,
+        'ou' => true,
+        'ni' => true,
+        'rdv' => true,
+        'rendez' => true,
+        'ostéopathe' => true,
+        'osteopathe' => true,
+        'consultation' => true,
+        'prise' => true,
+        'contact' => true,
+        'souhaite' => true,
+        'souhaiterais' => true,
+        'souhaiterai' => true,
+        'cordialement' => true,
+        'madame' => true,
+        'monsieur' => true,
+        'bonjour,' => true,
+        'merci,' => true
+    );
+
+    $words = preg_split('/[^a-zàâçéèêëîïôûùüÿœæ]+/iu', strtolower($text), -1, PREG_SPLIT_NO_EMPTY);
+
+    if (empty($words)) {
+        return false;
+    }
+
+    $frenchHits = 0;
+    $analyzedWords = 0;
+    $accentedWordHits = 0;
+
+    foreach ($words as $word) {
+        if (strlen($word) <= 1) {
+            continue;
+        }
+
+        $analyzedWords++;
+
+        if (isset($frenchCommonWords[$word])) {
+            $frenchHits++;
+        }
+
+        if (preg_match('/[àâçéèêëîïôûùüÿœæ]/u', $word)) {
+            $accentedWordHits++;
+        }
+    }
+
+    if (0 === $analyzedWords) {
+        return false;
+    }
+
+    $accentMatches = (int) preg_match_all('/[àâçéèêëîïôûùüÿœæ]/iu', $text);
+    $frenchApostrophes = preg_match("/\b(?:l'|d'|j'|qu')/iu", $text) ? 1 : 0;
+    $frenchSuffixMatches = (int) preg_match_all('/\b[a-z]+(?:tion|eux|euse|ment|ette|ique|eur|ures?|able|aire|ence|ance|ette|age)\b/iu', $text);
+
+    $frenchIndicatorsScore = ($frenchHits * 2) + ($accentMatches) + ($frenchApostrophes * 2) + $frenchSuffixMatches + $accentedWordHits;
+
+    if ($analyzedWords <= 3) {
+        if ($frenchHits >= 1 || $accentMatches >= 1) {
+            return true;
+        }
+
+        return false;
+    }
+
+    if ($frenchIndicatorsScore >= 6) {
+        return true;
+    }
+
+    if ($frenchHits >= 2 && ($accentMatches >= 1 || $frenchApostrophes || $accentedWordHits >= 1)) {
+        return true;
+    }
+
+    if ($accentMatches >= 3) {
+        return true;
+    }
+
+    if ($frenchHits >= 3) {
+        return true;
+    }
+
+    return false;
+}
+
     $values = $_POST;
     $mailSent = false;
     $_SESSION['err'] = array();
@@ -119,6 +269,12 @@ foreach ($spamKeywords as $keyword) {
         header('Location: ../index.php');
         exit;
     }
+}
+
+if (!isFrenchText($values['message'] . ' ' . $values['subject'] . ' ' . $values['name'])) {
+    $_SESSION['err']['spam'] = array('err' => 'spam', 'description' => 'Langue du message non autorisée');
+    header('Location: ../index.php');
+    exit;
 }
 
 // Protection anti-spam : vérification de liens suspects
